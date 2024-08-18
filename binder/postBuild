@@ -4,18 +4,18 @@
 #          jupyter/jupyterlab extensions/kernels              #
 ###############################################################
 
-echo "IPywidgets Jupyterlab"
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
+# echo "IPywidgets Jupyterlab"
+# jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 
-# Table of contents Jupyter Lab Extension
-echo "Table of contents Jupyter Lab extension install"
-jupyter labextension install @jupyterlab/toc --no-build 
+# # Table of contents Jupyter Lab Extension
+# echo "Table of contents Jupyter Lab extension install"
+# jupyter labextension install @jupyterlab/toc --no-build 
 
 
 # Building everything up
 echo "Building everything up (jupyter lab build)"
-jupyter lab build 
+# jupyter lab build 
 
 ###############################################################
 #             moving to a local installation folder           #

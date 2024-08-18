@@ -1,28 +1,12 @@
-###############################################################
-#          jupyter/jupyterlab extensions/kernels              #
-###############################################################
-# # beakerx (kernels: java, clojure, groovy, scala, kotlin, sql) and dependencies
-# beakerx
-# py4j
-
-# # sos - script of scripts (multiple kernels)
-# sos
-# sos-notebook
-
-#jupyter/jupyterlab extensions
-ipywidgets
-RISE
-
+# jupyter/jupyterlab extensions
 jupyter-server-proxy
 jupyter-vscode-proxy
+jupyterlab
+jupyterlab-rise
+ipywidgets
 
-###############################################################
-#          python packages             #
-###############################################################
-
-pprintpp
-
-
+# lab-related packages
+neo4j
 numpy
 pandas
 matplotlib
@@ -32,6 +16,6 @@ ipython-cypher
 networkx
 igraph
 jgraph
-
-
-
+pprintpp
+yfiles_jupyter_graphs
+yfiles_jupyter_graphs_for_neo4j
