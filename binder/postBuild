@@ -4,18 +4,10 @@
 #          jupyter/jupyterlab extensions/kernels              #
 ###############################################################
 
-# echo "IPywidgets Jupyterlab"
-# jupyter labextension install @jupyter-widgets/jupyterlab-manager
-
-
-# # Table of contents Jupyter Lab Extension
-# echo "Table of contents Jupyter Lab extension install"
-# jupyter labextension install @jupyterlab/toc --no-build 
-
-
-# Building everything up
-echo "Building everything up (jupyter lab build)"
+# Building jupyter lab 
+echo "Building jupyter lab..."
 # jupyter lab build 
+echo "Finished building jupyter lab!"
 
 ###############################################################
 #             moving to a local installation folder           #
@@ -24,12 +16,12 @@ echo "Building everything up (jupyter lab build)"
 mkdir ~/resources/local
 cd    ~/resources/local
 
-
 ###############################################################
 #             neo4j installation commands                   #
 ###############################################################
+echo "Installing Neo4j..."
 
-export NEO4J_VERSION=3.5.8
+export NEO4J_VERSION=5.22.0
 echo "export NEO4J_VERSION=${NEO4J_VERSION}" >> ~/.bashrc
 echo "export NEO4J_VERSION=${NEO4J_VERSION}" >> ~/.profile
 
@@ -52,12 +44,14 @@ rm artifact.php?name=neo4j-community-${NEO4J_VERSION}-unix.tar.gz
 echo "export PATH=\$PATH:\$NEO4J_HOME/bin"  >> ~/.bashrc
 echo "export PATH=\$PATH:\$NEO4J_HOME/bin"  >> ~/.profile
 
+echo "Finished installing Neo4j!"
 
 
 
 ###############################################################
 #             vscode server installation                      #
 ###############################################################
+echo "Installing VScode..."
 
 cd    ~/resources/local
 
@@ -83,4 +77,6 @@ echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.bashrc
 echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
 
 source ~/.bashrc
+
+echo "Finished installing VScode!"
 

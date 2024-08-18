@@ -1,13 +1,12 @@
 # jupyter/jupyterlab extensions
 jupyter-server-proxy
 jupyter-vscode-proxy
-jupyterlab
+jupyterlab>=3,<4
 jupyterlab-rise
 ipywidgets
 
 # lab-related packages
 neo4j
-numpy
 pandas
 matplotlib
 plotly
@@ -19,3 +18,5 @@ jgraph
 pprintpp
 yfiles_jupyter_graphs
 yfiles_jupyter_graphs_for_neo4j
+graph-notebook
+numpy<1.24

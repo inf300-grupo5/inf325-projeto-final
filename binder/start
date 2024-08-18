@@ -1,8 +1,5 @@
 #!/bin/bash
 
-mkdir logs
-
-
 chmod +x ~/binder/start.neo4j 
 chmod +x ~/binder/start.vscode 
 
@@ -12,6 +9,9 @@ chmod +x ~/binder/start.vscode
 # starting vscode in parallel
 ~/binder/start.vscode   &
 
+# adding my own extensions
+mkdir -p ~/.ipython/extensions/
+cp ~/.ipython/extensions/* ~/.ipython/extensions/
 
 # DO NOT REMOVE(!) 
 # Here is why: https://mybinder.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts

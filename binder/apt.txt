@@ -4,4 +4,4 @@ curl
 wget
 net-tools
 lsof
-openjdk-11-jdk
+openjdk-21-jdk
