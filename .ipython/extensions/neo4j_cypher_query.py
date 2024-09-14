@@ -73,7 +73,7 @@ def vis_network(nodes, edges, physics=True):
     html = html.format(id=unique_id, nodes=json.dumps(nodes), edges=json.dumps(edges), physics=json.dumps(physics))
 
     try:
-        os.makedirs('graphs')
+        os.makedirs('resources/graphs')
     except OSError as e:
         pass 
     
@@ -83,7 +83,7 @@ def vis_network(nodes, edges, physics=True):
     file.write(html)
     file.close()
 
-    return IFrame(filename, width="100%", height="450")
+    return IFrame(filename, width="100%", height="400")
 
 def draw(graph, options, physics=False, limit=300):
     # The options argument should be a dictionary of node labels and property keys; it determines which property
@@ -94,7 +94,7 @@ def draw(graph, options, physics=False, limit=300):
     MATCH (n)
     WITH n, rand() AS random
     ORDER BY random
-    LIMIT 300
+    LIMIT 150
     OPTIONAL MATCH (n)-[r]->(m)
     RETURN n AS source_node,
            id(n) AS source_id,
