@@ -1,3 +1,5 @@
 #!/bin/bash
-
-su -l postgres -c '/usr/lib/postgresql/16/bin/pg_ctl -D /var/lib/pg -l /tmp/logfile start'
+mkdir /var/lib/pg
+chown postgres:postgres /var/lib/pg
+su -l postgres -c '/usr/lib/postgresql/14/bin/pg_ctl -D /var/lib/pg -l /tmp/logfile initdb'
+su -l postgres -c '/usr/lib/postgresql/14/bin/pg_ctl -D /var/lib/pg -l /tmp/logfile start'

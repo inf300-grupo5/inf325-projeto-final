@@ -79,20 +79,3 @@ echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
 source ~/.bashrc
 
 echo "Finished installing VScode!"
-
-###############################################################
-#             vscode server installation                      #
-###############################################################
-
-echo "Installing postgresql"
-apt update
-apt install curl ca-certificates -y 
-install -d /usr/share/postgresql-common/pgdg
-curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
-sh -c 'echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt jammy-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-apt update
-apt -y install postgresql
-mkdir /var/lib/pg
-chown postgres:postgres /var/lib/pg
-su -l postgres -c '/usr/lib/postgresql/16/bin/pg_ctl -D /var/lib/pg -l /tmp/logfile initdb'
-echo "Finished installing PosgreSQL"
