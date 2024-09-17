@@ -1,4 +1,0 @@
-#!/bin/bash
-
-echo "rodou no pre" > /home/$USER/pre
-echo "PRE!!!!!!!"

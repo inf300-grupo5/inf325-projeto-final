@@ -9,6 +9,9 @@ chmod +x ~/binder/start.vscode
 # starting vscode in parallel
 ~/binder/start.vscode   &
 
+# starting postgresql
+~/binder/start.postgres
+
 # adding my own extensions
 mkdir -p ~/.ipython/extensions/
 cp ~/.ipython/extensions/* ~/.ipython/extensions/
