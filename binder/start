@@ -2,6 +2,7 @@
 
 chmod +x ~/binder/start.neo4j 
 chmod +x ~/binder/start.vscode 
+chmod +x ~/binder/start.postgres
 
 # starting neo4j
 ~/binder/start.neo4j   &
