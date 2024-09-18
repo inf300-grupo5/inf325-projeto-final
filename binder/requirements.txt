@@ -23,3 +23,6 @@ numpy<1.24
 redis
 sqlalchemy
 ipython-sql
+psycopg2
+requests
+pydantic
