@@ -13,6 +13,9 @@ chmod +x ~/binder/start.postgres
 # starting postgresql
 ~/binder/start.postgres
 
+# starting redis
+~/binder/start.redis &
+
 # adding my own extensions
 mkdir -p ~/.ipython/extensions/
 cp ~/.ipython/extensions/* ~/.ipython/extensions/

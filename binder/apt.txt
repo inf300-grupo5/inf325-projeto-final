@@ -6,3 +6,4 @@ net-tools
 lsof
 openjdk-21-jdk
 postgresql
+redis
