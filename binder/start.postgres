@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir /var/lib/pg
-chown postgres:postgres /var/lib/pg
-su -l postgres -c '/usr/lib/postgresql/14/bin/pg_ctl -D /var/lib/pg -l /tmp/logfile initdb'
-su -l postgres -c '/usr/lib/postgresql/14/bin/pg_ctl -D /var/lib/pg -l /tmp/logfile start'
+mkdir $HOME/pg
+/usr/lib/postgresql/14/bin/pg_ctl -D $HOME/pg -l /tmp/logfile initdb
+echo "unix_socket_directories = '/tmp'" >> $HOME/pg/postgresql.conf
+/usr/lib/postgresql/14/bin/pg_ctl -D $HOME/pg -l /tmp/logfile start
