@@ -26,3 +26,5 @@ ipython-sql
 psycopg2
 requests
 pydantic
+faker
+sqlmodel
