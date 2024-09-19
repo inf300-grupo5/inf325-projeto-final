@@ -5,7 +5,7 @@ echo "unix_socket_directories = '/tmp'" >> $HOME/pg/postgresql.conf
 /usr/lib/postgresql/14/bin/pg_ctl -D $HOME/pg -l /tmp/logfile start
 
 createuser postgres -s -w -h localhost
-createdb ecommnerce -h localhost
+createdb ecommerce -h localhost
 
 # load data into db
 
