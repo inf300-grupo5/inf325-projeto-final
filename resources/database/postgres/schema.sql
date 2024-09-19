@@ -4,7 +4,7 @@ CREATE TABLE payment_methods (
 	id uuid NOT NULL,
 	"type" varchar(50) NULL,
 	"name" varchar(255) NULL,
-	CONSTRAINT payment_methods_pkey PRIMARY KEY (id)
+	CONSTRAINT payment_methods_id PRIMARY KEY (id)
 );
 
 CREATE TABLE products (
@@ -19,7 +19,7 @@ CREATE TABLE products (
 	platform varchar(100) NULL,
 	"system" varchar(100) NULL,
 	discount float8 NULL,
-	CONSTRAINT products_pkey PRIMARY KEY (id)
+	CONSTRAINT products_id PRIMARY KEY (id)
 );
 
 CREATE TABLE users (
@@ -30,7 +30,7 @@ CREATE TABLE users (
 	gender varchar(50) NULL,
 	cpf varchar(14) NULL,
 	birth_date date NULL,
-	CONSTRAINT users_pkey PRIMARY KEY (id)
+	CONSTRAINT users_id PRIMARY KEY (id)
 );
 
 CREATE TABLE orders (
@@ -42,9 +42,9 @@ CREATE TABLE orders (
 	status varchar(50) NULL,
 	coupon_code varchar(50) NULL,
 	payment_method uuid NULL,
-	CONSTRAINT orders_pkey PRIMARY KEY (id),
-	CONSTRAINT orders_payment_method_fkey FOREIGN KEY (payment_method) REFERENCES payment_methods(id),
-	CONSTRAINT orders_user_id_fkey FOREIGN KEY (user_id) REFERENCES users(id)
+	CONSTRAINT orders_id PRIMARY KEY (id),
+	CONSTRAINT payment_method_id FOREIGN KEY (payment_method) REFERENCES payment_methods(id),
+	CONSTRAINT user_id FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 
@@ -53,8 +53,8 @@ CREATE TABLE orders_items (
 	order_id uuid NULL,
 	product_id uuid NULL,
 	price int8 NULL,
-	discount float8 NULL,
-	CONSTRAINT order_items_pkey PRIMARY KEY (id),
-	CONSTRAINT order_items_order_id_fkey FOREIGN KEY (order_id) REFERENCES orders(id),
-	CONSTRAINT order_items_product_id_fkey FOREIGN KEY (product_id) REFERENCES products(id)
+	discount int8 NULL,
+	CONSTRAINT items_id PRIMARY KEY (id),
+	CONSTRAINT order_id FOREIGN KEY (order_id) REFERENCES orders(id),
+	CONSTRAINT product_id FOREIGN KEY (product_id) REFERENCES products(id)
 );

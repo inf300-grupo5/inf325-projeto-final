@@ -3,3 +3,16 @@ mkdir $HOME/pg
 /usr/lib/postgresql/14/bin/pg_ctl -D $HOME/pg -l /tmp/logfile initdb
 echo "unix_socket_directories = '/tmp'" >> $HOME/pg/postgresql.conf
 /usr/lib/postgresql/14/bin/pg_ctl -D $HOME/pg -l /tmp/logfile start
+
+createuser postgres -s -w -h localhost
+
+# load data into db
+
+echo "iniciando a carga de dados no postgres....."
+psql -U postgres -h localhost < $HOME/resources/database/postgres/schema.sql
+psql -U postgres -h localhost < $HOME/resources/database/postgres/users_insert.sql
+psql -U postgres -h localhost < $HOME/resources/database/postgres/payment_methods_insert.sql
+psql -U postgres -h localhost < $HOME/resources/database/postgres/products_insert.sql
+psql -U postgres -h localhost < $HOME/resources/database/postgres/orders_insert.sql
+psql -U postgres -h localhost < $HOME/resources/database/postgres/orders_items_insert.sql
+echo "finalizando a carga de dados no postgres....."

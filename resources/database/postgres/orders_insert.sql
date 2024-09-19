@@ -1,4 +1,4 @@
-INSERT INTO orders (id, code, user_id, payment_method_id, status, coupon_code, created_at, updated_at) VALUES
+INSERT INTO orders (id, code, user_id, payment_method, status, coupon_code, created_at, updated_at) VALUES
 ('a90797cf-80ee-40bb-a1c3-26eaa711932c', 'IF9YY7C8NR81XP6Q', 'c4583898-9270-4845-a772-8ce02c2cf5f6', '5baa3e09-8ba6-45fd-ad22-810af4a81e2a', 'paid', '', '2024-09-18T22:03:27.093669', '2024-09-18T22:03:27.093673'),
 ('0fac23dd-5d88-4abc-9f5d-5f6d5791d9a4', 'RSKLU5RXTI1M505E', 'f136b401-0619-4328-88c1-36adc91c4de1', '2f30bd3c-e2a2-499d-ba5d-c093d85b8372', 'new', '10OFF', '2024-09-18T22:03:27.093745', '2024-09-18T22:03:27.093746'),
 ('5bbc944a-7297-4362-9361-2cfd0fb7be24', 'KNYF2QWZMYB7JL17', 'cefd24f0-2674-4fdb-9fd2-7e4ecf5b73ef', '5baa3e09-8ba6-45fd-ad22-810af4a81e2a', 'sent', '10OFF', '2024-09-18T22:03:27.093760', '2024-09-18T22:03:27.093760'),
@@ -398,4 +398,4 @@ INSERT INTO orders (id, code, user_id, payment_method_id, status, coupon_code, c
 ('b2338fec-0a58-4cfc-9dc0-7be2a372a89a', 'VYQV9H4VBTPRK2MZ', '6fd6f168-dd0c-4043-aebf-588e04602aaa', '5baa3e09-8ba6-45fd-ad22-810af4a81e2a', 'sent', '', '2024-09-18T22:03:27.100690', '2024-09-18T22:03:27.100690'),
 ('cdc48724-5b0d-4cfd-a350-e91188e1a92e', 'RYY2OEM7MP6I0ZIC', 'f28e0bae-8f32-45a3-a695-682518dfa03d', 'dd76ebf6-7e64-4e7e-9040-f40d9b95ebcf', 'sent', 'GAMEISLIFE', '2024-09-18T22:03:27.100711', '2024-09-18T22:03:27.100711'),
 ('78dd2416-2bc7-4a40-8447-1c025b6c4122', '18XNSBA4ZJEFYDKG', 'd0d245ee-3fe1-4b7f-9675-64296a1c7c4c', 'dd76ebf6-7e64-4e7e-9040-f40d9b95ebcf', 'cancelled', '10OFF', '2024-09-18T22:03:27.100721', '2024-09-18T22:03:27.100721'),
-('2f28a4e5-7f61-42dd-a139-2176a6a4f3f5', 'YSC1J8UGCB7DKH9H', 'a4907675-6e95-4e89-b77c-30d7685e019d', '5baa3e09-8ba6-45fd-ad22-810af4a81e2a', 'cancelled', '10OFF', '2024-09-18T22:03:27.100743', '2024-09-18T22:03:27.100744'),
+('2f28a4e5-7f61-42dd-a139-2176a6a4f3f5', 'YSC1J8UGCB7DKH9H', 'a4907675-6e95-4e89-b77c-30d7685e019d', '5baa3e09-8ba6-45fd-ad22-810af4a81e2a', 'cancelled', '10OFF', '2024-09-18T22:03:27.100743', '2024-09-18T22:03:27.100744')
