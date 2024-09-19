@@ -1,5 +1,3 @@
-CREATE DATABASE ecommerce;
-
 CREATE TABLE payment_methods (
 	id uuid NOT NULL,
 	"type" varchar(50) NULL,
