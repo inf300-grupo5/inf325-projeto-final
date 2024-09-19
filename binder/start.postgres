@@ -10,10 +10,10 @@ createdb ecommerce -h localhost
 # load data into db
 
 echo "iniciando a carga de dados no postgres....."
-psql -U postgres -h localhost ecommnerce < $HOME/resources/database/postgres/schema.sql
-psql -U postgres -h localhost ecommnerce < $HOME/resources/database/postgres/users_insert.sql
-psql -U postgres -h localhost ecommnerce < $HOME/resources/database/postgres/payment_methods_insert.sql
-psql -U postgres -h localhost ecommnerce < $HOME/resources/database/postgres/products_insert.sql
-psql -U postgres -h localhost ecommnerce < $HOME/resources/database/postgres/orders_insert.sql
-psql -U postgres -h localhost ecommnerce < $HOME/resources/database/postgres/orders_items_insert.sql
+psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/schema.sql
+psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/users_insert.sql
+psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/payment_methods_insert.sql
+psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/products_insert.sql
+psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/orders_insert.sql
+psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/orders_items_insert.sql
 echo "finalizando a carga de dados no postgres....."
