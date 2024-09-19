@@ -28,3 +28,5 @@ requests
 pydantic
 faker
 sqlmodel
+jupysql
+pyarrow
