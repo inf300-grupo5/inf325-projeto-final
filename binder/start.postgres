@@ -17,3 +17,7 @@ psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/prod
 psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/orders_insert.sql
 psql -U postgres -h localhost ecommerce < $HOME/resources/database/postgres/orders_items_insert.sql
 echo "finalizando a carga de dados no postgres....."
+
+echo "criando relação no neo4j"
+python $HOME/resources/database/graph/populate.py
+echo "finalizando relação no neo4j"
