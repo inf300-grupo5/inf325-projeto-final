@@ -1,7 +1,22 @@
-import psycopg2
-from py2neo import Graph, Node, Relationship
+import time
 
-graph = Graph("bolt://127.0.0.1:7687")
+import psycopg2
+from py2neo import Graph, Node, Relationship, ServiceUnavailable
+
+
+def connect_to_neo4j():
+    while True:
+        try:
+            graph = Graph("bolt://127.0.0.1:7687")
+            graph.run("RETURN 1")
+            print("Conectado ao Neo4j!")
+            return graph
+        except ServiceUnavailable as e:
+            print("Neo4j não está disponível, tentando novamente em 5 segundos...")
+            time.sleep(5)  # Espera 5 segundos antes de tentar novamente
+        except Exception as e:
+            print(f"Erro inesperado: {e}")
+            time.sleep(5)
 
 
 def get_all_products():
@@ -87,4 +102,5 @@ def insert_product_into_neo4j(product):
 
 
 if __name__ == '__main__':
+    graph = connect_to_neo4j()
     get_all_products()
