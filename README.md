@@ -28,7 +28,7 @@ jupyter-repo2docker -p 8888:8888 https://github.com/inf300-grupo5/inf325-projeto
                     jupyter lab --ip 0.0.0.0 --NotebookApp.token=''
 ```
 
-A interface estará disponível em: [](http://127.0.0.1:8888/lab)
+A interface estará disponível em: http://127.0.0.1:8888/lab
 
 ## 🛠️ Construído com
 
