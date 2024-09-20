@@ -270,4 +270,4 @@ INSERT INTO products (id, title, publisher, parental_guidance, release_date, upd
 ('9f3da1eb-8ff1-4f2a-8082-3c9a55b8e169', 'RPG Maker MV - Chiptune 8bit BGM Pack', 'Gotcha Gotcha Games', 'l', '2024-04-10', '2024-09-19T22:11:07.834486', 5499, 'RPG', 'playstation', 5),
 ('00d67fe2-db44-40d3-9eae-b850d97f5a18', 'RPG Maker MV - Symphonic Rock Music Pack', 'Gotcha Gotcha Games', 'l', '2024-04-10', '2024-09-19T22:11:07.834502', 2999, 'RPG', 'pc', 5),
 ('5cb1887e-aa38-4d62-aa56-3ca84c9d5cee', 'Endless Mountain', 'wang huimin', 'l', '2024-04-15', '2024-09-19T22:11:07.834517', 349, 'Casual', 'nintendo', 5),
-('b451e36c-39bd-4878-91a0-8260a074def4', '热血灵魂 王朝 ReXueLinHun Dynasty', 'None', 'l', '2023-05-25', '2024-09-19T22:11:07.834698', 299, 'Action', 'pc', 5),
+('b451e36c-39bd-4878-91a0-8260a074def4', '热血灵魂 王朝 ReXueLinHun Dynasty', 'None', 'l', '2023-05-25', '2024-09-19T22:11:07.834698', 299, 'Action', 'pc', 5)
