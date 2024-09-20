@@ -51,7 +51,7 @@ CREATE TABLE orders_items (
 	order_id uuid NULL,
 	product_id uuid NULL,
 	price int8 NULL,
-	discount int8 NULL,
+	discount float8 NULL,
 	CONSTRAINT items_id PRIMARY KEY (id),
 	CONSTRAINT order_id FOREIGN KEY (order_id) REFERENCES orders(id),
 	CONSTRAINT product_id FOREIGN KEY (product_id) REFERENCES products(id)
