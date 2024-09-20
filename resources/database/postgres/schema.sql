@@ -41,7 +41,7 @@ CREATE TABLE orders (
 	coupon_code varchar(50) NULL,
 	payment_method_id uuid NULL,
 	CONSTRAINT orders_id PRIMARY KEY (id),
-	CONSTRAINT payment_method_id FOREIGN KEY (payment_method) REFERENCES payment_methods(id),
+	CONSTRAINT payment_method_id FOREIGN KEY (payment_method_id) REFERENCES payment_methods(id),
 	CONSTRAINT user_id FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
